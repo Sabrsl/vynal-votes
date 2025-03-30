@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1976d2;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1565c0;
+}
+
+/* Smooth transitions */
+* {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Paper hover effects */
+.MuiPaper-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Button hover effects */
+.MuiButton-root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive typography */
+@media (max-width: 600px) {
+  .MuiTypography-h3 {
+    font-size: 2rem !important;
+  }
+  
+  .MuiTypography-h4 {
+    font-size: 1.75rem !important;
+  }
+  
+  .MuiTypography-h6 {
+    font-size: 1.25rem !important;
+  }
+}
